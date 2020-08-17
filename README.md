@@ -19,7 +19,9 @@ The aim is to create additional four filters for the webpage to allow users to f
 
 4. Finally, an event is included to listen for the form button and the table rebuilds when the page loads.
 
+
     function buildTable(data) {
+    
         tbody.html("");
         data.forEach((dataRow) => {
             let row = tbody.append("tr");

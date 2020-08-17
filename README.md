@@ -20,3 +20,5 @@ Then it calls the function filterTable().
 4. The buildTable() function creates html table from the filtered data.
 
 5. The main part of the script includes an event to listen for the form button and builds the table when the page loads.
+
+Index.html form has been also modified to include additional four filters.

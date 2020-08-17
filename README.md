@@ -1,6 +1,6 @@
 ### UFOs
 
-The aim is to create additional four filters for the webpage to allow users to filter the data by multiple factors.
+App.js has been enchanced to include additional four filters for the webpage to allow users to filter the data by multiple factors.
 
 1. To keep track of all filters, a variable "filters" has been declared as follows:
 

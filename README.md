@@ -18,3 +18,15 @@ The aim is to create additional four filters for the webpage to allow users to f
 3. Thirdly, filterTable() function was modified to include all five filters. The filteredData variable is set to the tableData. Loop through all of the filters and keep any data that matches the filter values.
 
 4. Finally, an event is included to listen for the form button and the table rebuilds when the page loads.
+
+    function buildTable(data) {
+        tbody.html("");
+        data.forEach((dataRow) => {
+            let row = tbody.append("tr");
+            Object.values(dataRow).forEach((val) => {
+                let cell = row.append("td");
+                cell.text(val);
+                }
+            );
+        });
+    }

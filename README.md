@@ -15,7 +15,7 @@ The aim is to create additional four filters for the webpage to allow users to f
 2. Secondly, the new function "updateFilters" has been created that saves the value of each element of user input into the "filters" variable. 
 Then it calls the function filterTable() to apply all filters and rebuild the table.
 
-3. Thirdly, filterTable() function was modified to include all five filters. The filteredData variable is set to the tableData. Loop through all of the filters and keep any data that matches the filter values.
+3. Thirdly, filterTable() function was created to loop through all five of the filters and keep any data that matches the filter values.
 
 4. Finally, an event is included to listen for the form button and the table rebuilds when the page loads.
 

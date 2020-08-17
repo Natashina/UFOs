@@ -2,7 +2,7 @@
 
 The aim is to create additional four filters for the webpage to allow users to filter the data by multiple factors.
 
-1. Firstly, to keep track of all filters, a variable "filters" has been declared as follows:
+1. To keep track of all filters, a variable "filters" has been declared as follows:
 
     var filters = {
         Date:"",
@@ -12,23 +12,11 @@ The aim is to create additional four filters for the webpage to allow users to f
         Shape:""
     };
 
-2. Secondly, the new function "updateFilters" has been created that saves the value of each element of user input into the "filters" variable. 
-Then it calls the function filterTable() to apply all filters and rebuild the table.
+2. The new function "updateFilters" has been created that saves the value of each element of user input into the "filters" variable. 
+Then it calls the function filterTable().
 
-3. Thirdly, filterTable() function was created to loop through all five of the filters and keep any data that matches the filter values.
+3. The filterTable() function was created to loop through all five of the filters and keep any data that matches the filter values. The filtered data is then passed to function buildTable().
 
-4. Finally, an event is included to listen for the form button and the table rebuilds when the page loads.
+4. The buildTable() function creates html table from the filtered data.
 
-
-    function buildTable(data) {
-    
-        tbody.html("");
-        data.forEach((dataRow) => {
-            let row = tbody.append("tr");
-            Object.values(dataRow).forEach((val) => {
-                let cell = row.append("td");
-                cell.text(val);
-                }
-            );
-        });
-    }
+5. The main part of the script includes an event to listen for the form button and builds the table when the page loads.
